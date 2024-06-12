@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Inventory Management System</h1>
+    <div>
+        <h2>Add Item to Inventory</h2>
+        <form id="addItemForm">
+            <input type="text" id="addProductId" placeholder="Product ID" required>
+            <input type="number" id="addQuantity" placeholder="Quantity" required>
+            <button type="submit">Add Item</button>
+        </form>
+    </div>
+    <div>
+        <h2>Remove Item from Inventory</h2>
+        <form id="removeItemForm">
+            <input type="text" id="removeProductId" placeholder="Product ID" required>
+            <input type="number" id="removeQuantity" placeholder="Quantity" required>
+            <button type="submit">Remove Item</button>
+        </form>
+    </div>
+    <div>
+        <h2>Add Item to Cart</h2>
+        <form id="addItemToCartForm">
+            <input type="text" id="customerId" placeholder="Customer ID" required>
+            <input type="text" id="cartProductId" placeholder="Product ID" required>
+            <input type="number" id="cartQuantity" placeholder="Quantity" required>
+            <button type="submit">Add to Cart</button>
+        </form>
+    </div>
+    <div>
+        <h2>Apply Discount Coupon</h2>
+        <form id="applyDiscountForm">
+            <input type="number" id="cartValue" placeholder="Cart Value" required>
+            <input type="text" id="discountId" placeholder="Discount ID" required>
+            <button type="submit">Apply Discount</button>
+        </form>
+        <div id="discountedPrice"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
